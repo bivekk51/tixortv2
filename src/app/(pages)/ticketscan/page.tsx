@@ -58,6 +58,8 @@ export default function TicketScan() {
 
     const handleSubmit = useCallback(async () => {
 
+
+        //changes hhehehe
         const apiUrl = `/api/v1/tickets/qr?ticket_id=${ticketId}&event_id=${eventId}&security_code=${securityKey}&api_key=${apiKey}`;
         try {
             const response = await fetch(apiUrl);
